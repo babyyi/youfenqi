@@ -1,0 +1,28 @@
+/*'#0da5d6', '#2AB561', '#DE8910', '#16BA9D', '#0DA5D6'*/
+body,html {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font: 12px arial,'\5FAE\8F6F\96C5\9ED1', 'Hiragino Sans GB', Verdana;
+    color: #333;
+    width: 100%;
+}
+.section{
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.section1{
+    background: url(../image/pcbg_01.jpg) no-repeat center;
+}
+.section2{
+    background: url(../image/pcbg_02.jpg) no-repeat center;
+}
+.section3{
+    background: url(../image/pcbg_03.jpg) no-repeat center;
+}
+.section4{
+    background: url(../image/pcbg_04.jpg) no-repeat center;
+}

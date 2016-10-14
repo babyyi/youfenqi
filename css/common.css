@@ -1,0 +1,288 @@
+html, body {
+    background-color: #f1f1f1;
+}
+body, html {
+    background: #f8f8f8;
+}
+/*nav部分*/
+.unav{
+    max-width: 640px;
+    min-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+    height: 50px;
+    /*position: relative;*/
+    background-color: #29a1ef !important;
+    z-index: 200;
+    position: fixed;
+}
+.unav_logo{
+    width: 60px;
+    height:100%;
+    background: url(../img/logoword.png) no-repeat;
+    background-position: center;
+    background-size:contain;
+    position: absolute;
+    left: 10px;
+    top: 0px;
+}
+.unav_dot{
+    width: 40px;
+    height: 100%;
+    height: 2.5rem;
+    background: url("../img/dian.png")no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.unav_top{
+    top:40px;
+    z-index: 200;
+    position: fixed;
+    right: 0;
+    animation: popup 0.5s;
+}
+.none{
+    display: none;
+}
+.unav_top var{
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 10px solid #49545b;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    z-index: 5;
+}
+.unav_top s{
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 10px solid rgba(255, 255, 255, 0.94);;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    z-index: 6;
+}
+.unav_box{
+    right: 0.2rem;
+    width: 84px;
+    border-radius: 3px;
+    position: absolute;
+    top: 9px;
+    background-color: rgba(255, 255, 255, 0.94);
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+}
+.unav_box ul li:first-child{
+    border-radius: 3px 3px 0px 0px;
+}
+.unav_box ul li {
+    border-bottom: 1px solid #e2e6e9;
+    margin: 0 5px;
+}
+.unav_box ul li a{
+    display: block;
+    margin: 0 5px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #4c5b62;
+}
+a:link, a:visited {
+    text-decoration: none;
+}
+.unav_box ul li:last-child {
+    border: none;
+    border-radius: 0px 0px 3px 3px;
+}
+/*主题部分*/
+.unav_main{
+    max-width: 640px;
+    min-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.unav_main{
+    position: relative;
+    /*margin-top: 10px;*/
+}
+.unav_main img{
+    display: block;
+}
+.unav_load{
+    position: absolute;
+    width: 25%;
+    right: 20px;
+    top: 100px;
+}
+.unav_item{
+    margin-top: 10px;
+    background-color: #fff;
+    border-bottom: 10px solid #e2e6e9;
+}
+.unav_item .item1,.unav_item .item2,.unav_item .item3{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #e2e6e9;
+    margin-left: 10px;
+    padding: 17px 5px 16px 5px;
+}
+.unav_item  .item_icon ,.unav_item  .item_money,.unav_item .item_server{
+    width: 44px;
+    height: 44px;
+    background: url(../img/u.png) no-repeat;
+    background-size: contain;
+}
+.unav_item .u_txt,.unav_item .money_txt{
+    -webkit-box-flex: 1;
+    flex: 1;
+    display: block;
+    position: relative;
+    flex-basis: 0;
+    padding-left: 10px;
+    padding-top: 3px;
+}
+.unav_item .u_txt .item_txt,.money_txt .item_txt{
+    display: block;
+    font-size: 15px;
+    color: #4c5b62;
+}
+.unav_item .u_txt .item_content,.money_txt .item_content{
+    color: #999;
+    font-size: 12px;
+}
+.unav_item .item_money{
+    background: url(../img/linghua.png) no-repeat;
+    background-size: contain;
+}
+.unav_item .item_server{
+    background: url("../img/server1.png") no-repeat;
+    background-size: contain;
+}
+.ufq-banner-all {
+    background-color: #fff;
+    padding-bottom: 40px;
+    margin-top: 10px;
+    border-bottom: 1px solid #e2e6e9;
+}
+.swiper-container{
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+
+.swiper-container .carousel-indicators {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+}
+.swiper-container .carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #000 \9;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.swiper-container .carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #ccc;
+}
+/*底部分*/
+.unav_footer .go-top{
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+    width: 34px;
+    height: 30px;
+    z-index: 10;
+    background: url(../img/go-top-icon.png) no-repeat center center;
+    background-size: contain;
+    display: none;
+}
+.unav_footer{
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+.unav_footer .index_footer{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+    color: #999;
+}
+.unav_footer .index_footer p{
+    margin: 0;
+    line-height: 20px;
+}
+.app_wrap{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-width: 320px;
+    height: 60px;
+    background-color: #1b2728;
+    opacity: 0.8;
+    z-index: 2;
+}
+.app_wrap .app_close{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    background: url("../img/app-down-close.png") no-repeat;
+    background-size: contain;
+}
+.app_wrap .app_txt{
+    width: 100%;
+    height: 60px;
+    padding: 8px 15px 8px 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.app_wrap .app_txt .app_icon{
+    width: auto;
+    height: 100%;
+    background: url("../img/app_down.png") no-repeat;
+    background-size: contain;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+}
+.app_wrap .app_txt  .app_btn{
+    width: 82px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 25px;
+    background-color: #ffa800;
+    color: #fff;
+    margin: 10px 0;
+    display: block;
+    text-align: center;
+}
